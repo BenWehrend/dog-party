@@ -1,16 +1,132 @@
 @import 'variables';
 
 body {
-  background: url('../../dist/images/park.jpg') center/cover;
   height: 100vh;
   width: 100%;
-}
-
-nav {
-  // Example of using a variable:
-  background-color: $secondary-accent-color;
+  display: grid;
+  grid-template-rows: .25fr 2fr 2.5fr 1fr;
 }
 
 .dog-icon {
   width: 50px;
+  padding: 1%;
+}
+
+.first-row {
+  background-color: $secondary-accent-color;
+  margin-top: -0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding-left: 1%;
+  margin-left: -0.8em;
+}
+
+.second-row {
+  background: url('../../dist/images/park.jpg') center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1em;
+  p {
+    font-family: $main-font-style;
+    font-size: 2vw;
+  }
+  button {
+    border: 5px solid $main-accent-color;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: $main-font-style;
+    background-color: white;
+    font-size: 1.5vh;
+    color: $main-accent-color;
+  }
+}
+
+.third-row > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  width: 100%; 
+}
+
+.third-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center; 
+  align-items: center;
+  gap: 20px; 
+  width: 100%; 
+  height: 100%;
+  p {
+    font-family: $main-font-style;
+    font-size: 1.5vh;
+    line-height: 1.2;
+    width: 65%
+  }
+  button {
+    border: 5px solid $main-accent-color;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: $main-font-style;
+    background-color: white;
+    font-size: 1.5vh;
+    color: $main-accent-color;
+  }
+}
+
+.fourth-row {
+  background-color: $main-accent-color;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -1em;
+  p {
+    color: white;
+    font-family: $main-font-style;
+    font-size: 1.5vh;
+  }
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  gap: 5em;
+}
+
+.round-image-top {
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  border: .4em solid $main-accent-color;
+}
+
+.round-image-middle {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  border: .2em solid $main-accent-color
+}
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  }
+
+.text-container p {
+  flex: 1; 
+  text-align: center;
+  min-width: 6em; 
+  font-family: $main-font-style;
+  font-size: 1.75vh;
+  color: white;
+}
+
+.title {
+  font-family: $main-font-style
 }
