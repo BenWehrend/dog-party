@@ -24,6 +24,7 @@ body {
 
 .second-row {
   background: url('../../dist/images/park.jpg') center/cover;
+  background-position: center 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,9 +40,13 @@ body {
     margin-bottom: 1em;
     font-family: $main-font-style;
     background-color: white;
-    font-size: 1.5vh;
+    font-size: 2vh;
     color: $main-accent-color;
   }
+}
+
+#green-dog {
+  margin-top: 1.5em;
 }
 
 .third-row > div {
@@ -49,7 +54,7 @@ body {
   flex-direction: column;
   align-items: center; 
   text-align: center; 
-  width: 100%; 
+  width: 75%; 
 }
 
 .third-row {
@@ -57,6 +62,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center; 
   align-items: center;
+  text-align: center;
   gap: 20px; 
   width: 100%; 
   height: 100%;
@@ -64,7 +70,7 @@ body {
     font-family: $main-font-style;
     font-size: 1.5vh;
     line-height: 1.2;
-    width: 65%
+    width: 90%
   }
   button {
     border: 5px solid $main-accent-color;
@@ -106,8 +112,8 @@ body {
 }
 
 .round-image-middle {
-  width: 15em;
-  height: 15em;
+  width: 13em;
+  height: 13em;
   border-radius: 50%;
   border: .2em solid $main-accent-color
 }
