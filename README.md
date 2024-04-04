@@ -3,6 +3,9 @@
 ## Project Spec  
 [https://frontend.turing.edu/projects/M2-static-comp-challenge.html](https://frontend.turing.edu/projects/M2-static-comp-challenge.html)
 
+## My Static Comp
+https://benwehrend.github.io/dog-party/
+
 ## Setup
 1. Fork + clone down this repo
 1. `cd` into the directory
